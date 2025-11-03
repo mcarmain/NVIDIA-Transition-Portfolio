@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Martin Carmain — NVIDIA Transition Portfolio</title>
+  <meta name="description" content="From Azure Solutions Architect ➜ Generative AI / LLM Solutions Architect (GPU-Accelerated)">
+  <link rel="icon" href="images/favicon.png">
+  <style>
+    :root{
+      --ink:#0b0f12; --card:#11161b; --muted:#9aa4ad; --text:#e7eef5; --thin:#1b2229;
+      --accent:#76B900; /* NVIDIA green */
+      --azure:#0078D4; --dotnet:#512BD4; --react:#61DAFB;
+      --radius:18px; --shadow:0 8px 24px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--ink);color:var(--text);font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,sans-serif}
+    a{color:var(--react);text-decoration:none} a:hover{opacity:.9}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px}
+    .hero{border:1px solid var(--thin);background:linear-gradient(180deg,#0f1419 0%, #0b0f12 100%);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
+    .hero h1{margin:0 0 8px;font-size:40px;letter-spacing:.2px}
+    .hero p.lead{margin:0 0 18px;color:var(--muted);font-size:18px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+    .badge{border:1px solid var(--thin);background:var(--card);padding:8px 12px;border-radius:999px;font-size:13px}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#0b0f12;border:0;border-radius:12px;padding:12px 16px;font-weight:600}
+    .btn.secondary{background:#182025;color:var(--text);border:1px solid var(--thin)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:28px}
+    .card{grid-column:span 6;border:1px solid var(--thin);background:var(--card);border-radius:var(--radius);padding:18px;transition:transform .2s ease}
+    .card:hover{transform:translateY(-2px)}
+    .card h3{margin:0 0 6px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0}
+    .pill{font-size:12px;border:1px solid var(--thin);background:#0e1419;border-radius:999px;padding:6px 10px;color:var(--muted)}
+    .footer{border-top:1px solid var(--thin);margin-top:36px;padding:18px;color:var(--muted);font-size:14px}
+    .banner{width:100%;aspect-ratio:16/4;border-radius:12px;border:1px solid var(--thin);background:url('images/banner.png') center/cover no-repeat;margin:14px 0 18px}
+    @media (max-width:900px){.card{grid-column:span 12}.hero h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="banner" role="img" aria-label="Portfolio banner"></div>
+      <h1>Martin Carmain</h1>
+      <p class="lead">Azure Solutions Architect ➜ <strong>Generative AI / LLM Solutions Architect</strong> focused on NVIDIA’s Triton, TensorRT-LLM, and NeMo. Building enterprise-ready AI systems with measurable performance, reliability, and cost control.</p>
+
+      <div class="badges">
+        <span class="badge">CUDA 12.x</span>
+        <span class="badge">TensorRT-LLM</span>
+        <span class="badge">Triton Inference Server</span>
+        <span class="badge">NeMo Guardrails</span>
+        <span class="badge">PyTorch + CUDA</span>
+        <span class="badge">.NET 9</span>
+        <span class="badge">React + TS</span>
+        <span class="badge">Kubernetes (GPU)</span>
+        <span class="badge">Azure NC Series</span>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="https://github.com/your-github-username/NVIDIA-Transition-Portfolio">View Repository</a>
+        <a class="btn secondary" href="#projects">See Projects</a>
+        <a class="btn secondary" href="#about">About</a>
+        <a class="btn secondary" href="mailto:martin.carmain@email.com">Contact</a>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+      <!-- Project cards -->
+      <article class="card">
+        <h3><a href="../cuda-benchmark-notebook">CUDA Benchmark Notebook</a></h3>
+        <p>GPU vs CPU matrix multiply, Nsight analysis, and speedup visualization.</p>
+        <div class="meta">
+          <span class="pill">CUDA</span><span class="pill">Nsight</span><span class="pill">Python</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3><a href="../triton-tensorrt-llm-demo">Triton + TensorRT LLM Demo</a></h3>
+        <p>Serve Llama/Mistral with Triton; accelerate with TensorRT-LLM and benchmark tokens/sec.</p>
+        <div class="meta">
+          <span class="pill">Triton</span><span class="pill">TensorRT-LLM</span><span class="pill">ONNX</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3><a href="../nemo-rag-pipeline">NeMo RAG Pipeline</a></h3>
+        <p>Enterprise RAG chatbot with vector retrieval and NeMo Guardrails for safe responses.</p>
+        <div class="meta">
+          <span class="pill">NeMo</span><span class="pill">LangChain</span><span class="pill">Vector DB</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3><a href="../kubernetes-gpu-inference">Kubernetes GPU Inference</a></h3>
+        <p>Helm-based Triton deploy, GPU metrics, and horizontal scaling experiments.</p>
+        <div class="meta">
+          <span class="pill">K8s</span><span class="pill">Helm</span><span class="pill">Prometheus</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3><a href="../enterprise-llm-dashboard">Enterprise LLM Dashboard</a></h3>
+        <p>React + .NET 9 dashboard tracking latency, tokens/sec, GPU utilization, and cost.</p>
+        <div class="meta">
+          <span class="pill">React</span><span class="pill">.NET 9</span><span class="pill">SignalR</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="grid" style="margin-top:8px">
+      <article class="card" style="grid-column:span 12">
+        <h3>About</h3>
+        <p>I design cloud and AI systems that translate business needs into scalable, measurable outcomes. My current focus is deploying and optimizing LLMs with NVIDIA’s AI software stack and GPUs, integrating with enterprise platforms on Azure.</p>
+        <p><strong>Current phase:</strong> Triton + TensorRT-LLM optimization (Week 6/24).</p>
+        <p><strong>Contact:</strong> <a href="mailto:martin.carmain@email.com">martin.carmain@email.com</a> · <a href="https://www.linkedin.com/in/martincarmain">LinkedIn</a></p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Martin Carmain — NVIDIA Transition Portfolio
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
