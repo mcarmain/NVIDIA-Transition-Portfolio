@@ -1,4 +1,4 @@
-> 🌐 **Live Portfolio:** https://mcarmain.github.io/NVIDIA-Transition-Portfolio/
+> 🌐 **Live Portfolio:** https://github.com/mcarmain/NVIDIA-Transition-Portfolio/
 
 
 
